@@ -21,6 +21,7 @@ object build extends Build {
     crossPaths := false,
     name := msgpack4zJava06Name,
     javacOptions in compile ++= Seq("-target", "7", "-source", "7"),
+    javacOptions in (Compile, doc) ++= Seq("-locale", "en_US"),
     commands += Command.command("updateReadme")(UpdateReadme.updateReadmeTask),
     libraryDependencies ++= (
       ("org.msgpack" % "msgpack" % "0.6.11") ::
