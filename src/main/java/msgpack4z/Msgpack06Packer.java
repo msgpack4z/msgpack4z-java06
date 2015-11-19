@@ -131,6 +131,16 @@ final class Msgpack06Packer extends MessagePackBufferPacker implements MsgPacker
     }
 
     @Override
+    public void packExtTypeHeader(byte extType, int payloadLen) throws IOException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void writePayload(byte[] a) throws IOException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public byte[] result() {
         return toByteArray();
     }

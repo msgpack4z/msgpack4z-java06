@@ -34,7 +34,7 @@ object build extends Build {
     commands += Command.command("updateReadme")(UpdateReadme.updateReadmeTask),
     libraryDependencies ++= (
       ("org.msgpack" % "msgpack" % "0.6.12") ::
-      ("com.github.xuwei-k" % "msgpack4z-api" % "0.1.0") ::
+      ("com.github.xuwei-k" % "msgpack4z-api" % "0.2.0") ::
       Nil
     ),
     releaseProcess := Seq[ReleaseStep](

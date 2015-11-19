@@ -146,6 +146,21 @@ public class Msgpack06Unpacker implements MsgUnpacker {
     }
 
     @Override
+    public byte[] readPayload(int length) throws IOException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void readPayload(byte[] a) throws IOException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public ExtTypeHeader unpackExtTypeHeader() throws IOException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public void close() throws IOException {
         self.close();
     }
