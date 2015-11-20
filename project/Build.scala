@@ -24,6 +24,7 @@ object build extends Build {
   lazy val msgpack4zJava06 = Project("msgpack4z-java06", file(".")).settings(
     ReleasePlugin.extraReleaseCommands ++ sonatypeSettings: _*
   ).settings(
+    fullResolvers ~= {_.filterNot(_.name == "jcenter")},
     autoScalaLibrary := false,
     crossPaths := false,
     name := msgpack4zJava06Name,
