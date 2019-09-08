@@ -8,8 +8,6 @@ ReleasePlugin.extraReleaseCommands
 
 sonatypeSettings
 
-resolvers += Opts.resolver.sonatypeReleases
-
 autoScalaLibrary := false
 
 crossPaths := false
